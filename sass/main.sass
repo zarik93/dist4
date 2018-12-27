@@ -1,0 +1,391 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "colors"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: "HelveticaNeueCyr-Light", sans-serif
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+h2
+	text-transform: uppercase
+	font-size: 36px
+	text-align: center
+	padding: 20px
+h3
+	font-size: 24px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+header
+	background-color: $gray
+	height: 100px
+	width: 100%
+	padding: 10px 0 10px
+
+	#logo-img
+	
+	h1
+		margin-left: 20px
+		text-transform: uppercase
+		font-size: 24px
+		display: inline-block
+	.contact
+		text-align: right
+		#phone-img
+			vertical-align: top
+			padding-right: 10px
+
+		#phone
+			font-size: 30px
+			display: inline-block
+			margin-top: -10px
+			span
+				font-family: "HelveticaNeueCyr-Medium", sans-serif
+			
+		.button-call
+			width: 250px
+			background-color: #009900
+			text-decoration: none !important
+			border: none
+			color: $white
+			cursor: pointer
+			&:hover
+				background-color: #005000
+.main-page
+	background-image: url(../img/bcg.png)
+	background-repeat: no-repeat
+	display: flex
+	padding-top: 20px
+	#turnik
+		display: inline-block
+	.sale
+		background-image: url(../img/sale.png)
+		height: 125px
+		width: 125px
+		position: absolute
+		margin-left: -185px
+		//z-index: 1
+		display: inline-block
+		text-align: center
+		padding-top: 35px
+		p
+			line-height: 1em
+			font-size: 22px
+			margin: 0
+		span
+			margin: 0
+			font-size: 30px
+			color: $red
+			font-family: "HelveticaNeueCyr-Bold", sans-serif
+	.arrow-block
+		width: 220px
+		margin: 10px 0
+		display: flex
+		#arrow
+			margin: 10px 0
+			height: 25px
+			display: inline-block
+		p
+			display: inline
+			margin: 0 20px
+		span
+			font-family: "HelveticaNeueCyr-Medium", sans-serif
+	#man
+		display: inline-block
+		float: right
+		height: 400px
+		margin-top: 80px
+	.price-form
+		float: right
+		background-color: $white
+		height: 350px
+		width: 350px
+		.form-title
+			height: 60px
+			background-image: url(../img/bcg-form-title.png)
+			color: $white
+			text-align: center
+			span
+				font-family: "HelveticaNeueCyr-Medium", sans-serif
+				font-size: 24px
+				text-transform: uppercase
+			p
+				line-height: 0.6em
+		.form-main
+			padding: 10px
+			input
+				display: inline-block
+				width: 330px
+				margin-bottom: 10px
+				padding: 5px
+				border: 0
+				background-color: $gray
+				text-decoration: none !important
+				font-family: "HelveticaNeueCyr-LightItalic", sans-serif
+			input[type=checkbox]
+				display: none
+			.checkbox
+				margin-top: -5px
+			label
+				cursor: pointer
+				display: inline-block
+				padding-left: 25px
+				position: relative
+				font-size: 14px
+				width: 300px
+				margin: 0
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					width: 20px
+					height: 20px
+					border: 3px #ccc solid
+					top: 2px
+					left: 0
+				span
+					color: $red
+				img
+					display: block
+					position: absolute
+					top: 2px
+					right: 0
+			input[type=checkbox]:checked + label
+				
+				&:after
+					background-color: $red
+			.buy
+				background-image: url(../img/buy.png)
+				height: 60px
+				width: 100%
+				color: $white
+				text-align: center
+				font-size: 24px
+				line-height: 2.5em
+				margin-top: 10px
+				text-decoration: none
+				border: 0
+				cursor: pointer
+		.skidka
+			width: 350px
+			margin-top: 20px
+			height: 100px
+			display: flex
+			background-color: $white
+			position: relative
+			.skidka__image
+				position: relative
+				height: 110px
+				width: 100px
+				background-image: url(../img/skidka.png)
+				background-repeat: no-repeat
+				margin-top: -10px
+				text-align: center
+				padding: 20px
+				line-height: 1.5em
+				b
+					text-transform: uppercase
+					//position: absolute
+					
+				p
+
+				span
+					color: $red
+					font-size: 24px
+			.skidka__info
+
+				width: 250px
+				height: 100px
+.information
+	background-image: url(../img/bcg-info.png)
+	background-repeat: no-repeat
+	color: $white
+	text-align: center
+	padding-top: 20px
+	img
+		display: block
+		margin: 0 auto
+	p
+		font-size: 24px
+	b
+		font-size: 30px
+		font-family: "HelveticaNeueCyr-Bold", sans-serif
+	.information__block
+
+	.information__item
+		height: 180px
+		margin-top: 10px
+.characteristics
+	background-image: url(../img/bcg-characteristics.png)
+	background-repeat: no-repeat
+	padding-bottom: 40px
+	#arrow
+		margin-left: -110px
+	.characteristics__list
+		ul
+			line-height: 1.3em
+.mini-price-form
+	background-image: url(../img/bcg-mini-price-form.png)
+	background-repeat: no-repeat
+	.mini-price-form__main
+		padding: 10px
+		margin-top: -10px
+		input
+			display: inline-block
+			width: 100%
+			margin-top: 20px
+			padding: 5px 0 5px 15px
+			border: 0
+			text-decoration: none !important
+			font-family: "HelveticaNeueCyr-LightItalic", sans-serif
+		.buy
+			background-image: url(../img/buy.png)
+			height: 60px
+			width: 100%
+			color: $white
+			text-align: center
+			font-size: 24px
+			line-height: 2.5em
+			margin-top: 10px
+			text-decoration: none
+			border: 0
+			cursor: pointer
+.description
+	background-image: url(../img/bcg-description.png)
+	background-repeat: no-repeat
+	color: $white
+	padding-bottom: 40px
+	p
+		line-height: 1.5em
+.related-products
+	background-image: url(../img/bcg-related-products.png)
+	background-repeat: no-repeat
+	.related-products__image
+		height: 225px
+		margin-bottom: 40px
+		img
+			width: 300px
+		span
+			background-color: $text
+			position: absolute
+			left: 15px
+			color: $white
+			width: 300px
+			text-align: center
+			padding: 5px
+	.related-products__descrition
+		line-height: 1.3em
+		span
+			font-family: "HelveticaNeueCyr-Bold", sans-serif
+.video
+	background-image: url(../img/bcg-video.png)
+	background-repeat: no-repeat
+	color: $white
+	padding-bottom: 40px 
+.reviews
+	background-image: url(../img/bcg-reviews.png)
+	background-repeat: no-repeat
+	font-family: "HelveticaNeueCyr-LightItalic", sans-serif
+	padding-bottom: 40px 
+	.reviews__block
+		display: flex
+		padding-bottom: 40px
+		p
+			line-height: 1.3em
+		span
+			font-family: "HelveticaNeueCyr-Light", sans-serif
+			float: right
+			margin-top: 40px
+.motivation
+	background-image: url(../img/bcg-motivation.png)
+	background-repeat: no-repeat
+	color: $white
+	.motivation__item
+		height: 250px
+		margin-bottom: 40px
+		.motivation__item-element
+			display: flex
+			position: absolute
+			bottom: 40px
+			span
+				width: 180px
+				text-align: center
+				padding: 10px
+			#gray
+				background-color: $text
+				color: $yellow
+			#yellow
+				background-color: $yellow
+				color: $text
+	.long
+		height: 380px
+.call-back
+	background-color: $gray
+	height: 100px
+	width: 100%
+	padding: 10px 0 10px
+	p
+		margin-left: 20px
+		font-size: 24px
+		display: inline-block
+	span
+		text-transform: uppercase
+	.contact
+		text-align: right
+		#phone-img
+			vertical-align: top
+			padding-right: 10px
+
+		#phone
+			font-size: 30px
+			display: inline-block
+			margin-top: -10px
+			span
+				font-family: "HelveticaNeueCyr-Medium", sans-serif
+			
+		.button-call
+			width: 250px
+			background-color: #009900
+			text-decoration: none !important
+			border: none
+			color: $white
+			cursor: pointer
+			&:hover
+				background-color: #005000
+
+
+		
+
+
+
+@import "media" // Always at the end
